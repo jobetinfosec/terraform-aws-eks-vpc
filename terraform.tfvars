@@ -1,14 +1,14 @@
 # vpc variables
 region                       = "eu-west-3"
-project_name                 = "rentzone"
+project_name                 = "eks-vpc"
 environment                  = "dev"
-vpc_cidr                     = "10.0.0.0/16"
-public_subnet_az1_cidr       = "10.0.0.0/24"
-public_subnet_az2_cidr       = "10.0.1.0/24"
-private_app_subnet_az1_cidr  = "10.0.2.0/24"
-private_app_subnet_az2_cidr  = "10.0.3.0/24"
-private_data_subnet_az1_cidr = "10.0.4.0/24"
-private_data_subnet_az2_cidr = "10.0.5.0/24"
+vpc_cidr                     = "192.168.0.0/16"
+public_subnet_az1_cidr       = "192.168.0.0/18"
+public_subnet_az2_cidr       = "192.168.32.0/18"
+private_app_subnet_az1_cidr  = "192.168.64.0/18"
+private_app_subnet_az2_cidr  = "192.168.96.0/18"
+private_data_subnet_az1_cidr = "192.168.128.0/18"
+private_data_subnet_az2_cidr = "192.168.160.0/18"
 
 # security groups
-ssh_ip = "79.1.163.10/32"
+ssh_ip = "XXX/32"
